@@ -1,15 +1,4 @@
-# ---
-
-# - name: download binaries   xxxxx
-#   hosts: localhost
-#   connection: local
-#   gather_facts: false
-#   roles:
-#     - download
-
-
----
-# Copyright 2016 PingCAP, Inc.
+# Copyright 2018 PingCAP, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
