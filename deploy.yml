@@ -15,12 +15,12 @@
   roles:
     - common_dir
 
-# - name: deploying mydumper
-#   hosts: mydumper_servers
-#   tags:
-#     - mydumper
-#   roles:
-#     - mydumper
+- name: deploying mydumper
+  hosts: mydumper_servers
+  tags:
+    - mydumper
+  roles:
+    - mydumper
 
 - name: deploying loader 
   hosts: loader_servers
