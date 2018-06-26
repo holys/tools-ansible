@@ -6,7 +6,7 @@ After=syslog.target network.target remote-fs.target nss-lookup.target
 LimitNOFILE=1000000
 User={{ deploy_user }}
 ExecStart={{ deploy_dir }}/scripts/run_{{ this_role_name }}.sh
-Restart=always
+Restart={{ systemd_restart_policy }}
 RestartSec=15s
 
 [Install]
