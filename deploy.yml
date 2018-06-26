@@ -1,0 +1,38 @@
+# - name: check config locally
+#   hosts: localhost
+#   any_errors_fatal: true
+#   tags:
+#     - always
+#   roles:
+#     - check_config_static
+
+
+
+# deploying TiDB cluster
+
+- name: create directories
+  hosts: all
+  roles:
+    - common_dir
+
+# - name: deploying mydumper
+#   hosts: mydumper_servers
+#   tags:
+#     - mydumper
+#   roles:
+#     - mydumper
+
+- name: deploying loader 
+  hosts: loader_servers
+  tags:
+    - loader
+  roles:
+    - loader
+
+# - name: deploying syncer
+#   hosts: syncer_servers
+#   tags:
+#     - syncer
+#   roles:
+#     - syncer
+
