@@ -1,14 +1,4 @@
-# - name: check config locally
-#   hosts: localhost
-#   any_errors_fatal: true
-#   tags:
-#     - always
-#   roles:
-#     - check_config_static
-
-
-
-# deploying TiDB cluster
+# deploy tidb-enterprise-tools
 
 - name: create directories
   hosts: all
@@ -29,10 +19,10 @@
   roles:
     - loader
 
-# - name: deploying syncer
-#   hosts: syncer_servers
-#   tags:
-#     - syncer
-#   roles:
-#     - syncer
+- name: deploying syncer
+  hosts: syncer_servers
+  tags:
+    - syncer
+  roles:
+    - syncer
 
