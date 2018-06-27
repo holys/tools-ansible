@@ -1,12 +1,12 @@
 # Syncer Configuration.
 
 log-level = "info"
-log-file = "./log/syncer.log"
+log-file = "./log/syncer_1.log"
 log-rotate = "day"
 
 server-id = 101
 
-meta = "./meta/syncer.meta"
+meta = "./meta/syncer_1.meta"
 worker-count = 32
 batch = 100
 flavor = "mysql"
@@ -79,7 +79,7 @@ max-retry = 100
 [from]
 host = "127.0.0.1"
 user = "root"
-password = ""
+password = "Pingcap1@#"
 port = 3306
 
 [to]

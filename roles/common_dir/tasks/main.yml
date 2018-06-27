@@ -9,6 +9,7 @@
     - "{{ deploy_dir }}/conf"
     - "{{ deploy_dir }}/meta"
     - "{{ deploy_dir }}/log"
+    - "{{ deploy_dir }}/data"
     - "{{ backup_dir }}"
 
 

@@ -10,7 +10,7 @@
   when: loader_binary.changed and loader_binary.backup_file is defined
 
 - name: create configuration file 
-  copy: src="{{ conf_dir }}/{{ config_file }}" dest="{{ deploy_dir }}/conf" mode=0644
+  copy: src="{{ conf_dir }}/{{ loader_config_file }}" dest="{{ deploy_dir }}/conf" mode=0644
 
 - name: create run script
   template:
