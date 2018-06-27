@@ -1,7 +1,7 @@
 # Syncer Configuration.
 
 log-level = "info"
-log-file = "syncer.log"
+log-file = "./log/syncer.log"
 log-rotate = "day"
 
 server-id = 101
